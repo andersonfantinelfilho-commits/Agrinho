@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 23% 94%;
+    --foreground: 150 30% 5%;
+    --card: 40 20% 97%;
+    --card-foreground: 150 30% 5%;
+    --primary: 145 63% 49%;
+    --primary-foreground: 150 30% 5%;
+    --secondary: 40 23% 90%;
+    --secondary-foreground: 150 30% 5%;
+    --muted: 40 15% 90%;
+    --muted-foreground: 150 10% 40%;
+    --accent: 15 52% 53%;
+    --accent-foreground: 0 0% 100%;
+    --border: 40 15% 85%;
+    --input: 40 15% 85%;
+    --ring: 145 63% 49%;
+    --radius: 0.75rem;
+    --font-heading: 'Instrument Serif', serif;
+    --font-body: 'Outfit', sans-serif;
+    --font-display: 'Instrument Serif', serif;
+    --obsidian: 150 30% 5%;
+    --chlorophyll: 145 63% 49%;
+    --silica: 40 23% 94%;
+    --terracotta: 15 52% 53%;
+    --azure: 207 58% 90%;
+  }
+  .dark {
+    --background: 150 30% 5%;
+    --foreground: 40 23% 94%;
+    --card: 150 25% 8%;
+    --card-foreground: 40 23% 94%;
+    --primary: 145 63% 49%;
+    --primary-foreground: 150 30% 5%;
+    --secondary: 150 20% 12%;
+    --secondary-foreground: 40 23% 94%;
+    --muted: 150 15% 15%;
+    --muted-foreground: 40 10% 60%;
+    --accent: 15 52% 53%;
+    --accent-foreground: 0 0% 100%;
+    --border: 150 15% 15%;
+    --input: 150 15% 15%;
+    --ring: 145 63% 49%;
+  }
+}
+
+@layer base {
+  * { @apply border-border outline-ring/50; }
+  body { @apply bg-background text-foreground font-body; }
+}
+
+@layer utilities {
+  .text-obsidian { color: hsl(var(--obsidian)); }
+  .bg-obsidian { background-color: hsl(var(--obsidian)); }
+  .text-chlorophyll { color: hsl(var(--chlorophyll)); }
+  .bg-chlorophyll { background-color: hsl(var(--chlorophyll)); }
+  .text-silica { color: hsl(var(--silica)); }
+  .bg-silica { background-color: hsl(var(--silica)); }
+  .text-terracotta { color: hsl(var(--terracotta)); }
+  .bg-terracotta { background-color: hsl(var(--terracotta)); }
+  .text-azure { color: hsl(var(--azure)); }
+  .bg-azure { background-color: hsl(var(--azure)); }
+}
